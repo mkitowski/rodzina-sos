@@ -14,11 +14,24 @@ const ImageStyledBox = styled.div`
     @media (max-width: 600px) {
         width: 90%;
     }
+    transition: filter .3s ease-in-out;
+    filter: blur(1px);
+    :hover {
+        filter: blur(0);
+        > div{
+            color: black;
+
+        }
+    }
 `;
 
 const TextStyledBox = styled.div`
     width: 70%;
-    text-align: center
+    text-align: center;
+    font-weight: 700;
+    color: #626262;
+    transition: color .3s ease-in-out;
+       
 `;
 
 
