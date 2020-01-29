@@ -3,6 +3,7 @@ import { SectionWrapper } from './styled/SectionWrapper';
 import background from '../../assets/Couple.jpg';
 import logo from '../../assets/logo.png';
 import tail1 from '../../assets/tail1.jpeg';
+import tail2 from '../../assets/tail2.jpeg';
 import { LogoWrapper } from './styled/LogoWrapper';
 import { TitleWrapper } from './styled/TitleWrapper';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
@@ -13,6 +14,7 @@ import { SubTitle } from './styled/SubTitle';
 import { ContentWrapper } from './styled/ContentWrapper';
 import { BottomWrapper } from './styled/BottomWrapper';
 import { ImageBox } from './components/ImageBox';
+import { TailsWrapper } from './styled/TailsWrapper';
 
 export const Start = (props) => {
     const { isFetchingPage, fetchPage, page } = props;
@@ -48,12 +50,16 @@ export const Start = (props) => {
                 <BottomWrapper>
                     {page.bottomTitle}
                 </BottomWrapper>
-                <Fragment>
+                <TailsWrapper>
                     <ImageBox
                         image={tail1}
                         text={page.motto.first}
                     />
-                </Fragment>
+                    <ImageBox
+                        image={tail2}
+                        text={page.motto.second}
+                    />
+                </TailsWrapper>
             </SectionWrapper>
         </PageWrapper>
 

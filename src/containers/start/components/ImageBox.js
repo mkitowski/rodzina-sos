@@ -6,15 +6,19 @@ const ImageStyledBox = styled.div`
     background: url(${props => props.image}) no-repeat;
     background-position: center;
     background-size: contain;
-    width: 100%;
+    width: 45%;
     min-height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
+    @media (max-width: 600px) {
+        width: 90%;
+    }
 `;
 
 const TextStyledBox = styled.div`
     width: 70%;
+    text-align: center
 `;
 
 
