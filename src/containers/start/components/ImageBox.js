@@ -20,7 +20,6 @@ const ImageStyledBox = styled.div`
         filter: blur(0);
         > div{
             color: black;
-
         }
     }
 `;
