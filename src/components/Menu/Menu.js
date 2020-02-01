@@ -1,4 +1,4 @@
-import React, { ReactFragment, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import { MenuWrapper, MenuLogo } from './styled/MenuWrapper';
@@ -7,13 +7,20 @@ import { menu } from '../../constants/menu';
 import logo from '../../assets/logo.png';
 
 export const Menu = props => {
+    const [isTopPosition,setPosition] = useState(true)
     const { lang } = props;
-
-
-    console.log(menu[lang]);
+    
+    useEffect(() => {
+        const scrollPosition = window.addEventListener('scroll', () => {
+            window.pageYOffset ? setPosition(false) : setPosition(true);
+        })
+        return () => {
+            window.removeEventListener('scroll', scrollPosition);
+        };
+    }, []);
 
     return (
-        <MenuWrapper>
+        <MenuWrapper top={isTopPosition}>
             <MenuLogo logo={logo} />
             <ul>
                 {menu[lang].map(el => {

@@ -6,34 +6,35 @@ import {
   Route,
 } from 'react-router-dom';
 import { fetchPosts } from './actions/actions';
-import { isFetchingPosts, getPosts, postsFetched } from './selectors/app';
+// import { isFetchingPosts, getPosts, postsFetched } from './selectors/app';
 import { MenuConnect } from './components/Menu/MenuConnect';
+import { ContactSectionConnect } from './containers/contactSection/ContactSectionConnect';
 import { StartConnect } from './containers/start/StartConnect';
+import { PsychoConnect } from './containers/psychoterapia/PsychoConnect';
 
 const App = props => {
-  // useEffect(() => {
-  //   console.log(props.isFetchingPosts);
-  //   if(!props.isFetchingPosts) {
-  //     props.fetchPosts();
-  //   }
-  // }, []);
+
 
   return (
     <BrowserRouter>
       <MenuConnect/>
       <Switch>
-        <Route path='/'>
+        <Route exact path='/'>
           <StartConnect/>
         </Route>
+        <Route exact path='/terapia'>
+          <PsychoConnect/>
+        </Route>
       </Switch>
+      <ContactSectionConnect/>
     </BrowserRouter>
   );
 }
 
 export const AppConnect = connect(state => ({
-  isFetchingPosts: isFetchingPosts(state),
-  posts: getPosts(state),
-  postsFetched: postsFetched(state)
+  // isFetchingPosts: isFetchingPosts(state),
+  // posts: getPosts(state),
+  // postsFetched: postsFetched(state)
 }), (dispatch) => ({
-  fetchPosts: () => dispatch(fetchPosts())
+  // fetchPosts: () => dispatch(fetchPosts())
 }))(App);

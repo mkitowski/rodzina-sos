@@ -1,11 +1,10 @@
 import {
-    getPosts,
     getPage,
 } from '../api/index';
 import {
-    FETCH_POSTS,
-    FETCH_POSTS_SUCCESS,
-    FETCH_POSTS_FAILURE,
+    FETCH_SECTION,
+    FETCH_SECTION_SUCCESS,
+    FETCH_SECTION_FAILURE,
     FETCH_PAGE,
     FETCH_PAGE_SUCCESS,
     FETCH_PAGE_FAILURE,
@@ -40,31 +39,31 @@ function fetchPageFailure(error) {
     }
 }
 
-export function fetchPosts() {
+export function fetchSection(slug) {
     return async dispatch => {
         dispatch({
-            type: FETCH_POSTS,
+            type: FETCH_SECTION,
         });
         try {
-            const response = await getPosts();
-            return dispatch(fetchPostsSuccess(response));
+            const response = await getPage(slug);
+            return dispatch(fetchSectionSuccess(response));
         }
         catch (error) {
-            return dispatch(fetchPostsFailure(error));
+            return dispatch(fetchSectionFailure(error));
         }
     }
 }
 
-function fetchPostsSuccess(response) {
+function fetchSectionSuccess(response) {
     return {
-        type: FETCH_POSTS_SUCCESS,
+        type: FETCH_SECTION_SUCCESS,
         response,
     }
 }
 
-function fetchPostsFailure(error) {
+function fetchSectionFailure(error) {
     return {
-        type: FETCH_POSTS_FAILURE,
+        type: FETCH_SECTION_FAILURE,
         error,
     }
 }

@@ -2,9 +2,9 @@ import { connect } from 'react-redux';
 import { lang, isError } from '../../selectors/app';
 import { isFetchingPage, page, isPageFetched } from '../../selectors/page';
 import { fetchPage } from '../../actions/actions';
-import { Start } from './Start';
+import { Psycho } from './Psycho';
 
-export const StartConnect = connect(state => ({
+export const PsychoConnect = connect(state => ({
     isFetchingPage: isFetchingPage(state),
     page: page(state),
     isError: isError(state),
@@ -12,4 +12,4 @@ export const StartConnect = connect(state => ({
     isPageFetched: isPageFetched(state),
   }), (dispatch) => ({
       fetchPage: slug => dispatch(fetchPage(slug)),
-  }))(Start);
+  }))(Psycho);

@@ -1,7 +1,7 @@
 import {
-    FETCH_POSTS,
-    FETCH_POSTS_SUCCESS,
-    FETCH_POSTS_FAILURE,
+    FETCH_SECTION,
+    FETCH_SECTION_SUCCESS,
+    FETCH_SECTION_FAILURE,
     FETCH_MENU,
     FETCH_MENU_FAILURE,
     FETCH_MENU_SUCCESS,
@@ -12,14 +12,16 @@ import {
 import { textConvert } from '../actions/textConvert';
 
 const initialState = {
-    posts: [],
+    section: [],
     page: [],
     currentPost: [],
     menu: [],
-    isFetchingPosts: false,
+    isFetchingSection: false,
     isFetchingMenu: false,
     isFetchingPage: false,
     postFetched: false,
+    isSectionFetched: false,
+    isPageFetched: false,
     isError: false,
     lang: 'PL',
 }
@@ -32,6 +34,7 @@ export function rootReducer(state = initialState, action) {
                 ...state,
                 isFetchingPage: true,
                 isError: false,
+                isPageFetched: false,
             }
         case FETCH_PAGE_SUCCESS:
             const text = action.response.page.content;
@@ -39,6 +42,7 @@ export function rootReducer(state = initialState, action) {
             return {
                 ...state,
                 isFetchingPage: false,
+                isPageFetched: true,
                 page: translatedText,
             }
         case FETCH_PAGE_FAILURE:
@@ -46,25 +50,30 @@ export function rootReducer(state = initialState, action) {
             return {
                 ...state,
                 isFetchingPage: false,
+                isPageFetched: false,
                 isError: true,
             }
-        case FETCH_POSTS:
+        case FETCH_SECTION:
             return {
                 ...state,
-                isFetchingPosts: true,
+                isFetchingSection: true,
+                isSectionFetched: false,
+                isError: false,
             }
-        case FETCH_POSTS_SUCCESS:
+        case FETCH_SECTION_SUCCESS:
             return {
                 ...state,
-                isFetchingPosts: false,
-                postFetched: true,
-                posts: action.response[0],
+                isFetchingSection: false,
+                isSectionFetched: true,
+                section: textConvert(action.response.page.content, state.lang),
             }
-        case FETCH_POSTS_FAILURE:
+        case FETCH_SECTION_FAILURE:
             console.log(action.error);
             return {
                 ...state,
-                isFetchingPosts: false,
+                isFetchingSection: false,
+                isError: true,
+                isSectionFetched: false,
             }
         case FETCH_MENU:
             return {

@@ -1,10 +1,7 @@
 export const textConvert = (text,lang) => {
     let transformed = '';
-    console.log(text)
-    transformed = text.replace('<p>', '').replace('</p>', '').split('&#8222;').join(`"`).split('&#8221;').join(`"`).split('<br />').join('');
-    console.log(transformed);
+    transformed = text.replace('<p>', '').replace('</p>', '').split('&#8222;').join(`"`).split('&#8221;').join(`"`).split('<br />').join('').split('&#8243;').join('"');
     const result = JSON.parse(transformed);
-    console.log(result);
     // transformed = text.replace('<p>', '').replace('</p>', '').replace('<br />', ';').replace(/(\r\n|\n|\r)/gm, '');
     // const array = transformed.split(';');
     // console.log(array);

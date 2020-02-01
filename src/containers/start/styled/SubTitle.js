@@ -4,17 +4,18 @@ import styled from 'styled-components';
 
 const SubTitleStyled = styled.div`
     color: #626262;
-    margin: 0 auto 2rem;
-    padding: 10rem 5px 15px;
+    margin: 0 auto;
+    padding: 6rem 5px 2rem;
     text-align: center;
     font-size: 2rem;
     font-weight: 800;
+    line-height: 5rem;
 `;
 const SubTitleUnderline = styled.div`
     width: 10%;
     min-width: 100px;
     height: 3px;
-    margin: 20px auto;
+    margin: 0 auto;
     border-top: 1px solid #EFD77F;
     border-top-left-radius: 8px;
     border-left: 1px solid #EFD77F;
