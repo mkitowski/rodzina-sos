@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { SectionWrapper } from './styled/SectionWrapper';
+import { SectionWrapper } from '../styled/SectionWrapper';
 import background from '../../assets/Couple.jpg';
 import logo from '../../assets/logo.png';
 import tail1 from '../../assets/tail1.jpeg';
@@ -8,8 +8,8 @@ import { LogoWrapper } from './styled/LogoWrapper';
 import { TitleWrapper } from './styled/TitleWrapper';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { MoreIconWrapper } from './styled/MoreIconWrapper';
-import { DarkWrapper } from './styled/DarkWrapper';
-import { PageWrapper } from './styled/PageWrapper';
+import { DarkWrapper } from '../styled/DarkWrapper';
+import { PageWrapper } from '../styled/PageWrapper';
 import { SubTitle } from './styled/SubTitle';
 import { ContentWrapper } from './styled/ContentWrapper';
 import { BottomWrapper } from './styled/BottomWrapper';
@@ -35,7 +35,7 @@ export const Start = (props) => {
     return (
         <>
             {hasSettings && <PageWrapper>
-                <SectionWrapper img={background} id={1}>
+                <SectionWrapper img={background}>
                     <DarkWrapper>
                         <LogoWrapper logo={logo} />
                         <TitleWrapper>
