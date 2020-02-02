@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import {GridTail} from './styled/GridTail';
 
 const GridStyled = styled.div`
-    margin: 3rem auto;
+    margin: .5rem auto 3rem;
 `;
 
 export const DataGrid = ({data}) => {
