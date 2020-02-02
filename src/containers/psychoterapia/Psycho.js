@@ -18,47 +18,38 @@ export const Psycho = (props) => {
         }
     }, []);
     const hasContent = page.hasOwnProperty('sections') && !isFetchingPage;
-    return (<>
-        {isFetchingPage || !hasContent ?
-            <Loader /> :
-            <PageWrapper>
-                <SectionWrapper img={background} top={true}>
-                    <DarkWrapper top={true}>
-                        <TitleWrapper top={true}>
-                            {page.title}
-                        </TitleWrapper>
-                    </DarkWrapper>
-                </SectionWrapper>
-                <SectionWrapper>
-                    {page.sections.map(el => {
-                        return (<>
-                            <SubTitle>
-                                {el.subTitle}
-                            </SubTitle>
-                            <ContentWrapper>
-                                {
-                                    el.content.map(item => {
-                                        return <div>
-                                            {Parser(item)}
-                                        </div>
-                                    })
-                                }
-                            </ContentWrapper>
-                        </>)
-                    })}
-                    <DataGrid data={page.therapies}/>
-
-                </SectionWrapper>
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                tu bedzie o terapii...
-    </PageWrapper>}</>
+    return (
+        <>
+            {isFetchingPage || !hasContent ?
+                <Loader /> :
+                <PageWrapper>
+                    <SectionWrapper img={background} top={true}>
+                        <DarkWrapper top={true}>
+                            <TitleWrapper top={true}>
+                                {page.title}
+                            </TitleWrapper>
+                        </DarkWrapper>
+                    </SectionWrapper>
+                    <SectionWrapper>
+                        {page.sections.map(el => {
+                            return (<>
+                                <SubTitle>
+                                    {el.subTitle}
+                                </SubTitle>
+                                <ContentWrapper>
+                                    {
+                                        el.content.map(item => {
+                                            return <div>
+                                                {Parser(item)}
+                                            </div>
+                                        })
+                                    }
+                                </ContentWrapper>
+                            </>)
+                        })}
+                        <DataGrid data={page.therapies} />
+                    </SectionWrapper>
+                </PageWrapper>}
+        </>
     )
 }

@@ -1,5 +1,10 @@
 import React, {useState} from 'react';
+import styled from 'styled-components';
 import {GridTail} from './styled/GridTail';
+
+const GridStyled = styled.div`
+    margin: 3rem auto;
+`;
 
 export const DataGrid = ({data}) => {
     const [visible, setVisible] = useState(false);
@@ -8,12 +13,10 @@ export const DataGrid = ({data}) => {
         const result = !visible;
         setVisible(result);
     }
-    return(<>
+    return(<GridStyled>
     {data.map(el => {
-        return (
-            <>
+        return (           
                 <GridTail title={el.title} content={el.content}/>
-            </>
         )
-    })}</>)
+    })}</GridStyled>)
 }

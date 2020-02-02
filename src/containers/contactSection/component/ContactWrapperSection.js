@@ -15,9 +15,15 @@ export const ContactWrapperSection = (props) => {
             case 'address':
                 setAddres(`https://goo.gl/maps/jQntkNC4Twd1ocQq8`);
                 break;
+            case 'facebook':
+                setAddres('https://www.facebook.com/RodzinaSOSpl-261293988080556/');
+                break;
+            case 'youtube':
+                setAddres('https://www.youtube.com/channel/UCnve3Px3V_AlJH2hirKkcKA/');
+                break;
             default: setAddres(`https://${props.text}`);
         }
-    }, [])
+    }, [props.icon, props.text])
 
     return (
         <a href={linkAddress} target='_blanc'>

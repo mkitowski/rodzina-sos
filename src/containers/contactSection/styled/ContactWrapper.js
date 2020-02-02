@@ -10,7 +10,7 @@ export const ContactWrapper = styled.div`
     display: flex;
     justify-content: space-around;
     text-align: center;
-    padding: 3rem;
+    padding: 3rem 0;
     flex-wrap: wrap;
     >div, a {
         color: white;

@@ -16,4 +16,7 @@ export const GridContent = styled.div`
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
     }
+    ul {
+        margin-left: 2rem;
+    }
 `;
