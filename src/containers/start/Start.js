@@ -5,25 +5,26 @@ import logo from '../../assets/logo.png';
 import tail1 from '../../assets/tail1.jpeg';
 import tail2 from '../../assets/tail2.jpeg';
 import { LogoWrapper } from './styled/LogoWrapper';
-import { TitleWrapper } from './styled/TitleWrapper';
+import { TitleWrapper } from '../styled/TitleWrapper';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { MoreIconWrapper } from './styled/MoreIconWrapper';
 import { DarkWrapper } from '../styled/DarkWrapper';
 import { PageWrapper } from '../styled/PageWrapper';
-import { SubTitle } from './styled/SubTitle';
-import { ContentWrapper } from './styled/ContentWrapper';
+import { SubTitle } from '../styled/SubTitle';
+import { ContentWrapper } from '../styled/ContentWrapper';
 import { BottomWrapper } from './styled/BottomWrapper';
 import { ImageBox } from './components/ImageBox';
 import { TailsWrapper } from './styled/TailsWrapper';
-import { ContactSectionConnect } from '../contactSection/ContactSectionConnect';
+import { Loader } from '../../components/loader/Loader';
 
 export const Start = (props) => {
-    const { isFetchingPage, fetchPage, page, isPageFetched, isError } = props;
+    const { isFetchingPage, fetchPage, page, isError } = props;
     useEffect(() => {
-        if (!isFetchingPage && !isPageFetched && !isError) {
+        if (!isFetchingPage && !isError) {
             fetchPage('start');
         }
-    }, [fetchPage, isFetchingPage, isPageFetched, isError]);
+    }, []);
+    console.log(page);
 
     const second = useRef(null)
 
@@ -34,7 +35,9 @@ export const Start = (props) => {
     const hasSettings = page.hasOwnProperty('motto') && !isFetchingPage;
     return (
         <>
-            {hasSettings && <PageWrapper>
+            {!hasSettings || isFetchingPage ?
+            <Loader/> :
+            <PageWrapper>
                 <SectionWrapper img={background}>
                     <DarkWrapper>
                         <LogoWrapper logo={logo} />

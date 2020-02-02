@@ -5,9 +5,9 @@ import styled from 'styled-components';
 const SubTitleStyled = styled.div`
     color: #626262;
     margin: 0 auto;
-    padding: 6rem 5px 2rem;
+    padding: 4rem 5px 2rem;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 800;
     line-height: 5rem;
 `;

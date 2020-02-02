@@ -15,12 +15,11 @@ export const ContactSection = (props) => {
     const renderWrappSections = () => {
             const result = [];
             for (const key in section){
-                result.push(<ContactWrapperSection icon={key} text={section[key]}/>)
+                result.push(<ContactWrapperSection key ={key} icon={key} text={section[key]}/>)
             }
             return result;
         
     }
-    console.log(isSectionFetched)
     return <ContactWrapper>
         {isSectionFetched && renderWrappSections()}
     </ContactWrapper>;

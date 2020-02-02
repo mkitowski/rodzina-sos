@@ -1,3 +1,4 @@
+// contact section
 {
     "PL": {
         "address": [
@@ -16,5 +17,186 @@
         "tel": "+48 579 069 089 ",
         "email": "biuro@rodzina.sos.pl",
         "www": "www.rodzina.sos.pl"
+    }
+}
+// psychoterapia
+{
+    "PL": {
+        "title": "PSYCHOTERAPIA ​POZNAWCZO-BEHAWIORALNA",
+        "sections": [
+            {
+                "subTitle": "główne założenia",
+                "content": [
+                    "Podejście Poznawczo- Behawioralne opiera się na założeniu o wzajemnym wpływie <b>myśli, emocji i zachowań.</b>",
+                    "Ta sama sytuacja może zostać zupełnie inaczej zinterpretowana przez dwie różne osoby.",
+                    "​Istota terapii jest zatem <b>odkrycie jakie są nasze myśli</b>, jeśli się źle czujemy.",
+                    "Następnie dokonujemy zmiany tych negatywnych, zniekształconych lub przesadzonych osadów. Człowiek, doświadczając różnych sytuacji w życiu nadaje im znaczenia i tworzy swój indywidualny obraz świata.",
+                    "Nowe sposoby myślenia będą rzutowały na zachowanie, nastroje i reakcje fizyczne.",
+                    "​Terapie tą z powodzeniem stosuje się w leczeniu zaburzeń o podłożu depresyjnym oraz lekowym."
+                ]
+            },
+            {
+                "subTitle": "forma terapii",
+                "content": [
+                    "Terapia skupia się na <b>teraźniejszości</b> szukając rozwiązań dla aktualnych problemów.",
+                    "<b>Trwa zazwyczaj od 6 tygodni do 6 miesięcy.</b>",
+                    "Podczas sesji, terapeuta stara się kompleksowo zrozumieć problem klienta i dopasować do niego najbardziej efektywne techniki.",
+                    "Oferujemy Terapię Małżeńską, Indywidualną, Rodzinną oraz On-Line"
+                ]
+            }
+        ],
+        "details": "szczegóły poniżej",
+        "therapies": [
+            {
+                "title": "terapia małżeńska",
+                "content": [
+                    "Terapia małżeńska to możliwość spotkania z terapeuta w prywatnym i poufnym miejscu. W tych warunkach możecie wyrazić swoje uczucia, opowiedzieć o swoich problemach i frustracjach.",
+                    "<b>Przed terapia możecie mieć wiele pytań:</b>",
+                    {
+                        "list": [
+                            "Czy terapeuta będzie po mojej stronie?",
+                            "Czy stworzy obóz z moim mężem/zona przeciwko mnie?",
+                            "Czy nasza relacja naprawdę się poprawi?"
+                        ]
+                    },
+                    "Oferuje wam terapie, w której będę miała role obserwatora, a nie sędziego. Możecie czuć się bezpiecznie podczas uzewnętrzniania się.",
+                    "Dam wam możliwość zbadania waszych mocnych i słabych stron.",
+                    "Przyznając się do nich zobaczycie, jak zidentyfikować konkretne sytuacje, które tworzą konflikty.",
+                    "Zrozumiecie wasze utarte schematy i wzory zachowan, które was poróżniają.",
+                    "Następnie nauczę was jak sobie radzić z negatywnymi emocjami, które osłabiają wasza więź i odpychają was od siebie.",
+                    "Nauczycie się jak wyrażać się adekwatnie do sytuacji, tak by zadbać o wasze uczucia i intymność małżeńską, a także by przywrócić radość i satysfakcje z bycia razem.​",
+                    "<b>Czas trwania sesji: 60 minut</b>"
+                ]
+            },
+            {
+                "title": "terapia indywidualna",
+                "content": [
+                    "Szukasz możliwości spotkania w cieplej atmosferze, gdzie będziesz mógł swobodnie wyrazić swoje myśli i uczucia bez ryzyka krytycznej oceny, to terapia indywidualna może być propozycja dla ciebie.",
+                    "Może pragniesz konkretnej zmiany, poprawy jakości życia lub pomocy w rozwiązaniu trudnych problemów.",
+                    "Terapia może Ci pomoc pokonać przeszkody, które staja Ci na drodze do dobrego samopoczucia. Możemy zwiększyć pozytywne uczucia, takie jak zadowolenie z życia, poczucie dumy z własnych wyborów i poczucie własnej wartości. ",
+                    "W czasie terapii nauczysz się umiejętności radzenia sobie w trudnych sytuacjach, podejmowania zdrowych decyzji i osiągania celów.",
+                    "Wiele osób uważa, że cieszą się podróżą terapeutyczną, dzięki której stają się bardziej świadomi. Niektórzy z moich klientów udają się na terapię ciągłą w celu samorozwoju.",
+                    "<b>Czas trwania sesji: 60 minut</b>"
+                ]
+            },
+            {
+                "title": "terapia rodzinna",
+                "content": [
+                    "Terapia rodzinna, czyli propozycja wspólnej rozmowy o trudnościach w Waszych relacja",
+                    "Wyobraźcie sobie, że rodzina jest jak system naczyń połączonych – kiedy jedno z Was ma problemy, odbijają się one negatywnie na jego najbliższych, a to z kolei przyczynia się do powstawania nieporozumień i konfliktów.",
+                    "Na początku terapii możecie mieć wątpliwości czy terapeuta nie stworzy obozu przeciwnika z innymi członkami rodziny. Podczas sesji staram się zachować neutralność i nie stawać po żadnej stronie ewentualnego konfliktu. Moim celem jest znalezienie takiego rozwiązania, które będzie spełniało potrzeby i oczekiwania wszystkich uczestników spotkania.",
+                    "Terapia Poznawczo Behawioralna rodzin uczy sposobów jasnej komunikacji swoich potrzeb, okazywania wsparcia członkom rodziny, szukania kompromisów. Nie proponuje całkowitego zerwania z dotychczasowymi zachowaniami, lecz ich modyfikację",
+                    "<b>Czas trwania sesji: 90 minut</b>"
+                ]
+            },
+            {
+                "title": "terapia on-line",
+                "content": [
+                    "Sesje on-line są dedykowane osobom, które nie mają możliwości bezpośredniego spotkania z terapeuta.",
+                    "Jeśli mieszkasz daleko, masz małe dziecko, jesteś niepełnosprawny, masz ograniczone zasoby czasowe, a może obawę przed osobistym spotkaniem, ta oferta może okazać się najlepszym rozwiązaniem dla Ciebie.",
+                    "Sesje on-line to nowoczesna i elastyczna forma pomocy prowadzona za pomocą środków komunikacji elektronicznej (telefon, Skype).",
+                    "Nie czekaj aż nierozwiązane problemy eskalują i zabraknie Ci sił.",
+                    "Jestem do Twojej dyspozycji. Razem pokonamy trudności.",
+                    "<b>Czas trwania sesji: 60 minut</b>"
+                ]
+            }
+        ],
+        "example": {
+            "title": "Ta sama sytuacja ​- Inna Interpretacja",
+            "content": [
+                "Mąż spóźnia się z pracy do domu.",
+                "Jedna osoba może myśleć , że mąż miał wypadek i zdenerwowana będzie oczekiwać na telefon z najgorszymi informacjami.",
+                "Natomiast druga osoba, może pomyśleć, że pewnie zmęczony po pracy, zatrzymał się na poboczu i zbiera myśli. Zadowolona, że mąż troszczy się o swoja równowagę psychiczna, przygotowuje kolacje przy świecach."
+            ]
+        }
+    },
+    "EN": {
+        "title": "PSYCHOTERAPIA ​POZNAWCZO-BEHAWIORALNA",
+        "sections": [
+            {
+                "subTitle": "główne założenia",
+                "content": [
+                    "Podejście Poznawczo- Behawioralne opiera się na założeniu o wzajemnym wpływie <b>myśli, emocji i zachowań.</b>",
+                    "Ta sama sytuacja może zostać zupełnie inaczej zinterpretowana przez dwie różne osoby.",
+                    "​Istota terapii jest zatem <b>odkrycie jakie są nasze myśli</b>, jeśli się źle czujemy.",
+                    "Następnie dokonujemy zmiany tych negatywnych, zniekształconych lub przesadzonych osadów. Człowiek, doświadczając różnych sytuacji w życiu nadaje im znaczenia i tworzy swój indywidualny obraz świata.",
+                    "Nowe sposoby myślenia będą rzutowały na zachowanie, nastroje i reakcje fizyczne.",
+                    "​Terapie tą z powodzeniem stosuje się w leczeniu zaburzeń o podłożu depresyjnym oraz lekowym."
+                ]
+            },
+            {
+                "subTitle": "forma terapii",
+                "content": [
+                    "Terapia skupia się na <b>teraźniejszości</b> szukając rozwiązań dla aktualnych problemów.",
+                    "<b>Trwa zazwyczaj od 6 tygodni do 6 miesięcy.</b>",
+                    "Podczas sesji, terapeuta stara się kompleksowo zrozumieć problem klienta i dopasować do niego najbardziej efektywne techniki.",
+                    "Oferujemy Terapię Małżeńską, Indywidualną, Rodzinną oraz On-Line"
+                ]
+            }
+        ],
+        "details": "szczegóły poniżej",
+        "therapies": [
+            {
+                "title": "terapia małżeńska",
+                "content": [
+                    "Terapia małżeńska to możliwość spotkania z terapeuta w prywatnym i poufnym miejscu. W tych warunkach możecie wyrazić swoje uczucia, opowiedzieć o swoich problemach i frustracjach.",
+                    "<b>Przed terapia możecie mieć wiele pytań:</b>",
+                    {
+                        "list": [
+                            "Czy terapeuta będzie po mojej stronie?",
+                            "Czy stworzy obóz z moim mężem/zona przeciwko mnie?",
+                            "Czy nasza relacja naprawdę się poprawi?"
+                        ]
+                    },
+                    "Oferuje wam terapie, w której będę miała role obserwatora, a nie sędziego. Możecie czuć się bezpiecznie podczas uzewnętrzniania się.",
+                    "Dam wam możliwość zbadania waszych mocnych i słabych stron.",
+                    "Przyznając się do nich zobaczycie, jak zidentyfikować konkretne sytuacje, które tworzą konflikty.",
+                    "Zrozumiecie wasze utarte schematy i wzory zachowan, które was poróżniają.",
+                    "Następnie nauczę was jak sobie radzić z negatywnymi emocjami, które osłabiają wasza więź i odpychają was od siebie.",
+                    "Nauczycie się jak wyrażać się adekwatnie do sytuacji, tak by zadbać o wasze uczucia i intymność małżeńską, a także by przywrócić radość i satysfakcje z bycia razem.​",
+                    "<b>Czas trwania sesji: 60 minut</b>"
+                ]
+            },
+            {
+                "title": "terapia indywidualna",
+                "content": [
+                    "Szukasz możliwości spotkania w cieplej atmosferze, gdzie będziesz mógł swobodnie wyrazić swoje myśli i uczucia bez ryzyka krytycznej oceny, to terapia indywidualna może być propozycja dla ciebie.",
+                    "Może pragniesz konkretnej zmiany, poprawy jakości życia lub pomocy w rozwiązaniu trudnych problemów.",
+                    "Terapia może Ci pomoc pokonać przeszkody, które staja Ci na drodze do dobrego samopoczucia. Możemy zwiększyć pozytywne uczucia, takie jak zadowolenie z życia, poczucie dumy z własnych wyborów i poczucie własnej wartości. ",
+                    "W czasie terapii nauczysz się umiejętności radzenia sobie w trudnych sytuacjach, podejmowania zdrowych decyzji i osiągania celów.",
+                    "Wiele osób uważa, że cieszą się podróżą terapeutyczną, dzięki której stają się bardziej świadomi. Niektórzy z moich klientów udają się na terapię ciągłą w celu samorozwoju.",
+                    "<b>Czas trwania sesji: 60 minut</b>"
+                ]
+            },
+            {
+                "title": "terapia rodzinna",
+                "content": [
+                    "Terapia rodzinna, czyli propozycja wspólnej rozmowy o trudnościach w Waszych relacja",
+                    "Wyobraźcie sobie, że rodzina jest jak system naczyń połączonych – kiedy jedno z Was ma problemy, odbijają się one negatywnie na jego najbliższych, a to z kolei przyczynia się do powstawania nieporozumień i konfliktów.",
+                    "Na początku terapii możecie mieć wątpliwości czy terapeuta nie stworzy obozu przeciwnika z innymi członkami rodziny. Podczas sesji staram się zachować neutralność i nie stawać po żadnej stronie ewentualnego konfliktu. Moim celem jest znalezienie takiego rozwiązania, które będzie spełniało potrzeby i oczekiwania wszystkich uczestników spotkania.",
+                    "Terapia Poznawczo Behawioralna rodzin uczy sposobów jasnej komunikacji swoich potrzeb, okazywania wsparcia członkom rodziny, szukania kompromisów. Nie proponuje całkowitego zerwania z dotychczasowymi zachowaniami, lecz ich modyfikację",
+                    "<b>Czas trwania sesji: 90 minut</b>"
+                ]
+            },
+            {
+                "title": "terapia on-line",
+                "content": [
+                    "Sesje on-line są dedykowane osobom, które nie mają możliwości bezpośredniego spotkania z terapeuta.",
+                    "Jeśli mieszkasz daleko, masz małe dziecko, jesteś niepełnosprawny, masz ograniczone zasoby czasowe, a może obawę przed osobistym spotkaniem, ta oferta może okazać się najlepszym rozwiązaniem dla Ciebie.",
+                    "Sesje on-line to nowoczesna i elastyczna forma pomocy prowadzona za pomocą środków komunikacji elektronicznej (telefon, Skype).",
+                    "Nie czekaj aż nierozwiązane problemy eskalują i zabraknie Ci sił.",
+                    "Jestem do Twojej dyspozycji. Razem pokonamy trudności.",
+                    "<b>Czas trwania sesji: 60 minut</b>"
+                ]
+            }
+        ],
+        "example": {
+            "title": "Ta sama sytuacja ​- Inna Interpretacja",
+            "content": [
+                "Mąż spóźnia się z pracy do domu.",
+                "Jedna osoba może myśleć , że mąż miał wypadek i zdenerwowana będzie oczekiwać na telefon z najgorszymi informacjami.",
+                "Natomiast druga osoba, może pomyśleć, że pewnie zmęczony po pracy, zatrzymał się na poboczu i zbiera myśli. Zadowolona, że mąż troszczy się o swoja równowagę psychiczna, przygotowuje kolacje przy świecach."
+            ]
+        }
     }
 }

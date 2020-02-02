@@ -1,11 +1,10 @@
-import React, {useEffect, ReactFragment} from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
 import {
   BrowserRouter,
   Switch,
   Route,
 } from 'react-router-dom';
-import { fetchPosts } from './actions/actions';
 // import { isFetchingPosts, getPosts, postsFetched } from './selectors/app';
 import { MenuConnect } from './components/Menu/MenuConnect';
 import { ContactSectionConnect } from './containers/contactSection/ContactSectionConnect';

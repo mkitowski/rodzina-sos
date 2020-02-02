@@ -1,11 +1,10 @@
-import React, { Fragment, useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { icons } from '../../../constants/icons';
 
 
 export const ContactWrapperSection = (props) => {
     const [linkAddress, setAddres] = useState(`https://${props.text}`);
     useEffect(() => {
-        console.log(props.icon)
         switch (props.icon) {
             case 'phone':
                 setAddres(`tel:${props.text}`);
