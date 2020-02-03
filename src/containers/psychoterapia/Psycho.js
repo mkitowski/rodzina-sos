@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import Parser from 'html-react-parser';
 import { Loader } from '../../components/loader/Loader';
 import { PageWrapper } from '../styled/PageWrapper';
 import { SectionWrapper } from '../styled/SectionWrapper';

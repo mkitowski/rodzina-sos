@@ -12,7 +12,7 @@ export const GridContent = styled.div`
     opacity:${props => props.visible ? `1` : `0`};
     transition: all .3s linear;
     background-color: rgba(92,92,92,.2);
-    :last-child {
+    :last-child, :nth-child(11), :nth-child(18), :nth-child(24) {
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
     }

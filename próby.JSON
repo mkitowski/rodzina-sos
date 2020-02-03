@@ -204,3 +204,33 @@
         }
     }
 }
+
+//plodnosc
+{
+    "PL": {
+        "title":"Chcemy mieć tyle dzieci
+        ​ile Nam się wymarzyło.",
+        "content":[
+            "Ten temat chce szczególnie skierować do osób, które pragną mieć dziecko, ale niestety z nieznanych przyczyn nie potrafią począć potomka.",
+            "Osobom, które już doświadczyły radości z oczekiwanego dziecka, ale po drodze coś poszło nie tak i straciły ten cudowny dar.",
+            "A także do osób, które już realizują się w swoim powołaniu rodzicielskim i chcą nauczyć się jak w naturalny sposób, świadomie podejmować decyzje o zaproszeniu kolejnego dziecka do rodziny lub odłożyć ten pomysł na inne czasy.",
+            "<b>Creighton Model System</b> to jedna z wielu naturalnych metod obserwacji <b>Waszego cyklu</b>, która dostarczy <b>Wam informacji</b> nie tylko na temat dni płodnych lub niepłodnych, ale także informacji na temat <b>Waszego zdrowia ginekologicznego.</b>",
+            "Nasza metoda obserwacji cyklu jest wykorzystywana w leczeniu bezpłodności, nawykowych poronień, a także ogólnie zdrowia kobiety w <b>NaProTechnologii.</b>",
+            "Dzięki zdobytej wiedzy na temat prowadzenia obserwacji, a także tego co kryje za sobą dany cykl, <b>Wasza rozmowa z lekarzem</b> będzie odbywała się na zupełnie innym poziomie.<br/>Będzie to <b>Wasza współpraca z lekarzem</b> i świadome podejmowanie leczenia.",
+            "​Dużą zaleta NaProTechnologii jest to, że szuka źródła Waszego problemu i stara się go naprawić, tak byście były zdrowe i mogli mieć tyle dzieci ile Wam się wymarzyło."
+        ]
+    },
+    "EN": {
+        "title":"Chcemy mieć tyle dzieci
+        ​ile Nam się wymarzyło.",
+        "content":[
+            "Ten temat chce szczególnie skierować do osób, które pragną mieć dziecko, ale niestety z nieznanych przyczyn nie potrafią począć potomka.",
+            "Osobom, które już doświadczyły radości z oczekiwanego dziecka, ale po drodze coś poszło nie tak i straciły ten cudowny dar.",
+            "A także do osób, które już realizują się w swoim powołaniu rodzicielskim i chcą nauczyć się jak w naturalny sposób, świadomie podejmować decyzje o zaproszeniu kolejnego dziecka do rodziny lub odłożyć ten pomysł na inne czasy.",
+            "<b>Creighton Model System</b> to jedna z wielu naturalnych metod obserwacji <b>Waszego cyklu</b>, która dostarczy <b>Wam informacji</b> nie tylko na temat dni płodnych lub niepłodnych, ale także informacji na temat <b>Waszego zdrowia ginekologicznego.</b>",
+            "Nasza metoda obserwacji cyklu jest wykorzystywana w leczeniu bezpłodności, nawykowych poronień, a także ogólnie zdrowia kobiety w <b>NaProTechnologii.</b>",
+            "Dzięki zdobytej wiedzy na temat prowadzenia obserwacji, a także tego co kryje za sobą dany cykl, <b>Wasza rozmowa z lekarzem</b> będzie odbywała się na zupełnie innym poziomie.<br/>Będzie to <b>Wasza współpraca z lekarzem</b> i świadome podejmowanie leczenia.",
+            "​Dużą zaleta NaProTechnologii jest to, że szuka źródła Waszego problemu i stara się go naprawić, tak byście były zdrowe i mogli mieć tyle dzieci ile Wam się wymarzyło."
+        ]
+    },
+}

@@ -10,6 +10,7 @@ import { MenuConnect } from './components/Menu/MenuConnect';
 import { ContactSectionConnect } from './containers/contactSection/ContactSectionConnect';
 import { StartConnect } from './containers/start/StartConnect';
 import { PsychoConnect } from './containers/psychoterapia/PsychoConnect';
+import { FertilityConnect } from './containers/Fertility/FertilityConnect';
 
 const App = props => {
 
@@ -23,6 +24,9 @@ const App = props => {
         </Route>
         <Route exact path='/terapia'>
           <PsychoConnect/>
+        </Route>
+        <Route exact path='/plodnosc'>
+          <FertilityConnect/>
         </Route>
       </Switch>
       <ContactSectionConnect/>

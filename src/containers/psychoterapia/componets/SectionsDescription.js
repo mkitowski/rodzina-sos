@@ -9,9 +9,9 @@ export const SectionsDescription = props => {
         <>
             {sections.map(el => {
                 return (<>
-                    <SubTitle>
+                    {el.hasOwnProperty('subTitle') && <SubTitle>
                         {el.subTitle}
-                    </SubTitle>
+                    </SubTitle>}
                     <ContentWrapper>
                         {
                             el.content.map(item => {
