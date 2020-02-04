@@ -18,13 +18,12 @@ import { TailsWrapper } from './styled/TailsWrapper';
 import { Loader } from '../../components/loader/Loader';
 
 export const Start = (props) => {
-    const { isFetchingPage, fetchPage, page, isError } = props;
+    const { isFetchingPage, fetchPage, page, isError, isPageFetched } = props;
     useEffect(() => {
-        if (!isFetchingPage && !isError) {
+        if (!isFetchingPage && !isError && !isPageFetched) {
             fetchPage('start');
         }
-    }, []);
-    console.log(page);
+    }, [isFetchingPage, isError, isPageFetched, fetchPage]);
 
     const second = useRef(null)
 
@@ -35,7 +34,7 @@ export const Start = (props) => {
     const hasSettings = page.hasOwnProperty('motto') && !isFetchingPage;
     return (
         <>
-            {!hasSettings || isFetchingPage ?
+            {!hasSettings || isFetchingPage || !isPageFetched ?
             <Loader/> :
             <PageWrapper>
                 <SectionWrapper img={background}>

@@ -1,27 +1,45 @@
 import {
     FETCH_SECTION,
-    FETCH_SECTION_SUCCESS,
+    TRANSLATE_SECTION_SUCCESS,
     FETCH_SECTION_FAILURE,
     FETCH_MENU,
     FETCH_MENU_FAILURE,
     FETCH_MENU_SUCCESS,
-    FETCH_PAGE,
-    FETCH_PAGE_SUCCESS,
-    FETCH_PAGE_FAILURE,
+    FETCH_START_PAGE,
+    FETCH_START_PAGE_FAILURE,
+    FETCH_ABOUT_PAGE,
+    TRANSLATE_ABOUT_PAGE_SUCCESS,
+    FETCH_ABOUT_PAGE_FAILURE,
+    FETCH_THERAPY_PAGE,
+    TRANSLATE_THERAPY_PAGE_SUCCESS,
+    FETCH_THERAPY_PAGE_FAILURE,
+    FETCH_FERTILITY_PAGE,
+    TRANSLATE_FERTILITY_PAGE_SUCCESS,
+    FETCH_FERTILITY_PAGE_FAILURE,
+    TRANSLATE_START_PAGE_SUCCESS,
 } from '../constants/actionTypes';
 import { textConvert } from '../actions/textConvert';
 
 const initialState = {
     section: [],
-    page: [],
+    startPage: [],
+    isFetchingStartPage: false,
+    isStartPageFetched: false,
+    therapyPage: [],
+    isFetchingTherapyPage: false,
+    isTherapyPageFetched: false,
+    fertilityPage: [],
+    isFetchingFertilityPage: false,
+    isFertilityPageFetched: false,
+    aboutPage: [],
+    isFetchingAboutPage: false,
+    isAboutPageFetched: false,
     currentPost: [],
     menu: [],
     isFetchingSection: false,
     isFetchingMenu: false,
-    isFetchingPage: false,
     postFetched: false,
     isSectionFetched: false,
-    isPageFetched: false,
     isError: false,
     lang: 'PL',
 }
@@ -29,28 +47,96 @@ const initialState = {
 export function rootReducer(state = initialState, action) {
     console.log(action.type);
     switch (action.type) {
-        case FETCH_PAGE:
+//START PAGE
+        case FETCH_START_PAGE:
             return {
                 ...state,
-                isFetchingPage: true,
+                isFetchingStartPage: true,
                 isError: false,
-                isPageFetched: false,
+                isStartPageFetched: false,
             }
-        case FETCH_PAGE_SUCCESS:
-            const text = action.response.page.content;
-            const translatedText = textConvert(text, state.lang);
+        case TRANSLATE_START_PAGE_SUCCESS:
             return {
                 ...state,
-                isFetchingPage: false,
-                isPageFetched: true,
-                page: translatedText,
+                isFetchingStartPage: false,
+                isStartPageFetched: true,
+                startPage: action.response[state.lang],
             }
-        case FETCH_PAGE_FAILURE:
+        case FETCH_START_PAGE_FAILURE:
             console.log(action.error)
             return {
                 ...state,
-                isFetchingPage: false,
-                isPageFetched: false,
+                isFetchingStartPage: false,
+                isStartPageFetched: false,
+                isError: true,
+            }
+// THERAPY PAGE
+        case FETCH_THERAPY_PAGE:
+            return {
+                ...state,
+                isFetchingTherapyPage: true,
+                isError: false,
+                isTherapyPageFetched: false,
+            }
+        case TRANSLATE_THERAPY_PAGE_SUCCESS:
+            return {
+                ...state,
+                isFetchingTherapyPage: false,
+                isTherapyPageFetched: true,
+                therapyPage: action.response[state.lang],
+            }
+        case FETCH_THERAPY_PAGE_FAILURE:
+            console.log(action.error)
+            return {
+                ...state,
+                isFetchingTherapyPage: false,
+                isTherapyPageFetched: false,
+                isError: true,
+            }
+// FERTILITY PAGE
+        case FETCH_FERTILITY_PAGE:
+            return {
+                ...state,
+                isFetchingFertilityPage: true,
+                isError: false,
+                isFertilityPageFetched: false,
+            }
+        case TRANSLATE_FERTILITY_PAGE_SUCCESS:
+            return {
+                ...state,
+                isFetchingFertilityPage: false,
+                isFertilityPageFetched: true,
+                fertilityPage: action.response[state.lang],
+            }
+        case FETCH_FERTILITY_PAGE_FAILURE:
+            console.log(action.error)
+            return {
+                ...state,
+                isFetchingFertilityPage: false,
+                isFertilityPageFetched: false,
+                isError: true,
+            }
+//ABOUT PAGE
+        case FETCH_ABOUT_PAGE:
+            return {
+                ...state,
+                isFetchingAboutPage: true,
+                isError: false,
+                isAboutPageFetched: false,
+            }
+        case TRANSLATE_ABOUT_PAGE_SUCCESS:
+            return {
+                ...state,
+                isFetchingAboutPage: false,
+                isAboutPageFetched: true,
+                aboutPage: action.response[state.lang],
+            }
+        case FETCH_ABOUT_PAGE_FAILURE:
+            console.log(action.error)
+            return {
+                ...state,
+                isFetchingAboutPage: false,
+                isAboutPageFetched: false,
                 isError: true,
             }
         case FETCH_SECTION:
@@ -60,12 +146,12 @@ export function rootReducer(state = initialState, action) {
                 isSectionFetched: false,
                 isError: false,
             }
-        case FETCH_SECTION_SUCCESS:
+        case TRANSLATE_SECTION_SUCCESS:
             return {
                 ...state,
                 isFetchingSection: false,
                 isSectionFetched: true,
-                section: textConvert(action.response.page.content, state.lang),
+                section: action.response[state.lang],
             }
         case FETCH_SECTION_FAILURE:
             console.log(action.error);

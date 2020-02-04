@@ -1,38 +1,38 @@
 import React, { useEffect } from 'react';
 import Parser from 'html-react-parser';
 import { SectionWrapper } from '../styled/SectionWrapper';
-import background from '../../assets/plodnosc.jpeg';
+import background from '../../assets/aboutTop.jpeg';
 import { DarkWrapper } from '../styled/DarkWrapper';
-import { TitleWrapper } from '../styled/TitleWrapper';
+import { AboutContentWrapper } from './styled/AboutContentWrapper';
 import { PageWrapper } from '../styled/PageWrapper';
 import { Loader } from '../../components/loader/Loader';
-import { ContentWrapper } from './../styled/ContentWrapper';
-import { ContentLine } from './styled/ContentLine';
+import { ContentLine } from './../Fertility/styled/ContentLine';
 import { FertilityPicture } from './styled/FertilityPicture';
+import { AboutTitleStyled } from './styled/AboutTitleStyled';
 
 
-export const Fertility = (props) => {
+export const About = (props) => {
     const { isFetchingPage, fetchPage, isError, page, isPageFetched } = props;
     useEffect(() => {
         if (!isFetchingPage && !isError && !isPageFetched) {
-            fetchPage('plodnosc');
+            fetchPage('about');
         }
-    }, [isPageFetched, isError, isFetchingPage, fetchPage]);
-
+    }, [isFetchingPage, isError, isPageFetched, fetchPage]);
+    console.log(!isPageFetched && isFetchingPage)
     return (
         <>
-            {isFetchingPage || !isPageFetched?
+            {!isPageFetched && isFetchingPage ?
                 <Loader /> :
                 <PageWrapper>
                     <SectionWrapper top={true} img={background} >
                         <DarkWrapper top={true}>
-                            <TitleWrapper top={true}>
-                                {page.titlePlodnosc}
-                            </TitleWrapper>
+                            <AboutTitleStyled>
+                                {typeof page.titleAbout === 'string' && Parser(page.titleAbout)}
+                            </AboutTitleStyled>
                         </DarkWrapper>
                     </SectionWrapper>
                     <SectionWrapper top={true}>
-                        <ContentWrapper >
+                        <AboutContentWrapper >
                             {
                                 page.content && page.content.map(el => {
                                     return <ContentLine>
@@ -40,7 +40,7 @@ export const Fertility = (props) => {
                                     </ContentLine>
                                 })
                             }
-                        </ContentWrapper>
+                        </AboutContentWrapper>
                     </SectionWrapper>
                     <FertilityPicture/>
                 </PageWrapper>}

@@ -14,39 +14,40 @@ import { ExampleTitleWrapper } from './componets/styled/ExampleTitleWrapper';
 import { ExampleContentWrapper } from './componets/styled/ExampleContentWrapper';
 
 export const Psycho = (props) => {
-    const { isFetchingPage, fetchPage, isError, page } = props;
+    const { isFetchingPage, fetchPage, isError, therapyPage, isPageFetched } = props;
     useEffect(() => {
-        if (!isFetchingPage && !isError) {
+        if (!isFetchingPage && !isError && !isPageFetched) {
             fetchPage('psyho');
         }
-    }, []);
-    const hasContent = page.hasOwnProperty('sections') && !isFetchingPage;
+    }, [isFetchingPage, isError, isPageFetched, fetchPage]);
+    const hasContent = therapyPage.hasOwnProperty('sections') && !isFetchingPage;
+
     return (
         <>
-            {isFetchingPage || !hasContent ?
+            {isFetchingPage || !hasContent  ?
                 <Loader /> :
                 <PageWrapper>
                     <SectionWrapper img={background} top={true}>
                         <DarkWrapper top={true}>
                             <TitleWrapper top={true}>
-                                {page.title}
+                                {therapyPage.title}
                             </TitleWrapper>
                         </DarkWrapper>
                     </SectionWrapper>
                     <SectionWrapper>
-                        <SectionsDescription sections={page.sections} />
+                        <SectionsDescription sections={therapyPage.sections} />
                         <DeatilsWrapper>
-                            {page.details}
+                            {therapyPage.details}
                         </DeatilsWrapper>
-                        <DataGrid data={page.therapies} />
+                        <DataGrid data={therapyPage.therapies} />
                     </SectionWrapper>
                     <SectionWrapper img={paper} top={true}>
                         <ExampleSituationWrapper>
                             <ExampleTitleWrapper>
-                                {page.example.title}
+                                {therapyPage.example.title}
                             </ExampleTitleWrapper>
                             <ExampleContentWrapper>
-                                {page.example.content.map(el => {
+                                {therapyPage.example.content.map(el => {
                                     return <div>{el}</div>
                                 })}
                             </ExampleContentWrapper>
