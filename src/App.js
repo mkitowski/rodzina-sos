@@ -12,6 +12,7 @@ import { StartConnect } from './containers/start/StartConnect';
 import { PsychoConnect } from './containers/psychoterapia/PsychoConnect';
 import { FertilityConnect } from './containers/Fertility/FertilityConnect';
 import { AboutConnect } from './containers/About/AboutConnect';
+import { ContactConnect } from './containers/Contact/ContactConnect';
 
 const App = props => {
 
@@ -31,6 +32,9 @@ const App = props => {
         </Route>
         <Route exact path='/oNas'>
           <AboutConnect/>
+        </Route>
+        <Route exact path='/kontakt'>
+          <ContactConnect/>
         </Route>
       </Switch>
       <ContactSectionConnect/>

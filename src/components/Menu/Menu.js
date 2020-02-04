@@ -7,9 +7,9 @@ import { menu } from '../../constants/menu';
 import logo from '../../assets/logo.png';
 
 export const Menu = props => {
-    const [isTopPosition,setPosition] = useState(true)
+    const [isTopPosition, setPosition] = useState(true)
     const { lang } = props;
-    
+
     useEffect(() => {
         const scrollPosition = window.addEventListener('scroll', () => {
             window.pageYOffset ? setPosition(false) : setPosition(true);
@@ -25,7 +25,9 @@ export const Menu = props => {
             <ul>
                 {menu[lang].map(el => {
                     return (
-                        <li key={el.id}><Link to={el.path}>{el.slug}</Link></li>
+                        el.slug !== 'vlog' ?
+                            <li key={el.id}><Link to={el.path}>{el.slug}</Link></li> :
+                            <li key={el.id}><a href={el.path}>{el.slug}</a></li>
                     )
                 })}
             </ul>

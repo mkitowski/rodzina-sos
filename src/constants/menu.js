@@ -17,7 +17,7 @@ export const menu = {
         },
         {
             id: '4',
-            path: 'vlog',
+            path: 'https://www.youtube.com/channel/UCnve3Px3V_AlJH2hirKkcKA/',
             slug: 'vlog',
         },
         {

@@ -17,8 +17,10 @@ import {
     TRANSLATE_FERTILITY_PAGE_SUCCESS,
     FETCH_FERTILITY_PAGE_FAILURE,
     TRANSLATE_START_PAGE_SUCCESS,
+    FETCH_CONTACT_PAGE,
+    FETCH_CONTACT_PAGE_FAILURE,
+    TRANSLATE_CONTACT_PAGE_SUCCESS,
 } from '../constants/actionTypes';
-import { textConvert } from '../actions/textConvert';
 
 const initialState = {
     section: [],
@@ -34,6 +36,9 @@ const initialState = {
     aboutPage: [],
     isFetchingAboutPage: false,
     isAboutPageFetched: false,
+    contactPage: [],
+    isFetchingContactPage: false,
+    isContactPageFetched: false,
     currentPost: [],
     menu: [],
     isFetchingSection: false,
@@ -47,7 +52,7 @@ const initialState = {
 export function rootReducer(state = initialState, action) {
     console.log(action.type);
     switch (action.type) {
-//START PAGE
+        //START PAGE
         case FETCH_START_PAGE:
             return {
                 ...state,
@@ -70,7 +75,7 @@ export function rootReducer(state = initialState, action) {
                 isStartPageFetched: false,
                 isError: true,
             }
-// THERAPY PAGE
+        // THERAPY PAGE
         case FETCH_THERAPY_PAGE:
             return {
                 ...state,
@@ -93,7 +98,7 @@ export function rootReducer(state = initialState, action) {
                 isTherapyPageFetched: false,
                 isError: true,
             }
-// FERTILITY PAGE
+        // FERTILITY PAGE
         case FETCH_FERTILITY_PAGE:
             return {
                 ...state,
@@ -116,7 +121,7 @@ export function rootReducer(state = initialState, action) {
                 isFertilityPageFetched: false,
                 isError: true,
             }
-//ABOUT PAGE
+        //ABOUT PAGE
         case FETCH_ABOUT_PAGE:
             return {
                 ...state,
@@ -139,6 +144,30 @@ export function rootReducer(state = initialState, action) {
                 isAboutPageFetched: false,
                 isError: true,
             }
+        //CONTACT PAGE
+        case FETCH_CONTACT_PAGE:
+            return {
+                ...state,
+                isFetchingContactPage: true,
+                isError: false,
+                isContactPageFetched: false,
+            }
+        case TRANSLATE_CONTACT_PAGE_SUCCESS:
+            return {
+                ...state,
+                isFetchingContactPage: false,
+                isContactPageFetched: true,
+                contactPage: action.response[state.lang],
+            }
+        case FETCH_CONTACT_PAGE_FAILURE:
+            console.log(action.error)
+            return {
+                ...state,
+                isFetchingContactPage: false,
+                isContactPageFetched: false,
+                isError: true,
+            }
+            //
         case FETCH_SECTION:
             return {
                 ...state,

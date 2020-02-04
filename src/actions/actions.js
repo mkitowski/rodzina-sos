@@ -17,6 +17,9 @@ import {
     FETCH_FERTILITY_PAGE,
     FETCH_FERTILITY_PAGE_SUCCESS,
     FETCH_FERTILITY_PAGE_FAILURE,
+    FETCH_CONTACT_PAGE,
+    FETCH_CONTACT_PAGE_SUCCESS,
+    FETCH_CONTACT_PAGE_FAILURE,
     TRANSLATE_START_PAGE,
     TRANSLATE_START_PAGE_FAILURE,
     TRANSLATE_START_PAGE_SUCCESS,
@@ -29,6 +32,9 @@ import {
     TRANSLATE_ABOUT_PAGE,
     TRANSLATE_ABOUT_PAGE_SUCCESS,
     TRANSLATE_ABOUT_PAGE_FAILURE,
+    TRANSLATE_CONTACT_PAGE,
+    TRANSLATE_CONTACT_PAGE_SUCCESS,
+    TRANSLATE_CONTACT_PAGE_FAILURE,
     TRANSLATE_SECTION,
     TRANSLATE_SECTION_SUCCESS,
     TRANSLATE_SECTION_FAILURE,
@@ -326,6 +332,65 @@ function translateSectionSuccess(response) {
 function translateSectionFailure(error) {
     return {
         type: TRANSLATE_SECTION_FAILURE,
+        error,
+    }
+}
+
+export function translateContactPage(content) {
+    return async dispatch => {
+        dispatch({
+            type:TRANSLATE_CONTACT_PAGE,
+        });
+        try {
+            const response = await textConvert(content.page.content);
+            return dispatch(translateContactPageSuccess(response));
+        }
+        catch (error) {
+            return dispatch(translateContactPageFailure(error))
+        }
+    }
+}
+
+function translateContactPageSuccess(response) {
+    return {
+        type: TRANSLATE_CONTACT_PAGE_SUCCESS,
+        response,
+    }
+}
+
+function translateContactPageFailure(error) {
+    return {
+        type: TRANSLATE_CONTACT_PAGE_FAILURE,
+        error,
+    }
+}
+
+export function fetchContactPage(slug) {
+    return async dispatch => {
+        dispatch({
+            type: FETCH_CONTACT_PAGE,
+        });
+        try {
+            const response = await getPage(slug);
+            dispatch(translateContactPage(response));
+            return dispatch(fetchContactPageSuccess(response));
+        }
+        catch (error) {
+            return dispatch(fetchContactPageFailure(error));
+        }
+    }
+}
+
+function fetchContactPageSuccess(response) {
+    return {
+        type: FETCH_CONTACT_PAGE_SUCCESS,
+        response,
+    }
+}
+
+function fetchContactPageFailure(error) {
+    return {
+        type: FETCH_CONTACT_PAGE_FAILURE,
         error,
     }
 }

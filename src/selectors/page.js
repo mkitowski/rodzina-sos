@@ -50,6 +50,18 @@ export function isAboutPageFetched(state) {
     return getPage(state).isAboutPageFetched;
 }
 
+export function isFetchingContactPage(state) {
+    return getPage(state).isFetchingContactPage;
+}
+
+export function contactPage(state) {
+    return getPage(state).contactPage;
+}
+
+export function isContactPageFetched(state) {
+    return getPage(state).isContactPageFetched;
+}
+
 export function isFetchingSection(state) {
     return getPage(state).isFetchingSection;
 }

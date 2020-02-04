@@ -18,7 +18,7 @@ export const About = (props) => {
             fetchPage('about');
         }
     }, [isFetchingPage, isError, isPageFetched, fetchPage]);
-    console.log(!isPageFetched && isFetchingPage)
+
     return (
         <>
             {!isPageFetched && isFetchingPage ?
