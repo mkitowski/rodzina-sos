@@ -1,17 +1,51 @@
-import React from 'react';
+import React, { useState } from 'react';
+import styled from 'styled-components';
 
-import Map from 'pigeon-maps';
-import Overlay from 'pigeon-overlay'
+import MapGL, { Marker } from 'react-map-gl';
 import heart from './../../../assets/logo.png';
 
-export const Mapa = ({coordinates}) => {
+const Icon = styled.div`
+    background: url(${heart}) no-repeat;
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    position: relative;
+    top: -40px;
+    left: -20px;
+
+`;
+const SIZE = 50;
+
+export const Mapa = ({ coordinates }) => {
+
+    const [viewport, setViewport] = useState({
+        latitude: coordinates[0],
+        longitude: coordinates[1],
+        zoom: 12
+    });
 
     return (
-        <Map defaultCenter={coordinates} defaultZoom={15} width={window.innerWidth} height={400}>
-            <Overlay anchor={coordinates} offset={[20, 45]}>
-                <img src={heart} width={40} height={45} alt='' />
-            </Overlay>
-        </Map>
-    )
+        <MapGL
+            mapboxApiAccessToken={'pk.eyJ1IjoibWtpdG93c2tpIiwiYSI6ImNrNmR1c2g3cDBhaXczbm12ZnFrMW13NGgifQ.WoJPSjYOzJS3MWfCvf9XrA'}
+            {...viewport}
+            width="100vw"
+            height="300px"
+            onViewportChange={setViewport}
+        >
+            <Marker longitude={coordinates[1]} latitude={coordinates[0]}>
+                <Icon />
+                <svg
+                    height={SIZE}
+                    viewBox="0 0 24 24"
+                    style={{
+                        cursor: 'pointer',
+                        fill: '#d00',
+                        stroke: 'none',
+                        transform: `translate(${-SIZE / 2}px,${-SIZE}px)`
+                    }}
+                ></svg>
+            </Marker>
+        </MapGL>
+    );
 
 }

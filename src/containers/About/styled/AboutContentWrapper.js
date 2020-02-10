@@ -4,7 +4,7 @@ export const AboutContentWrapper = styled.div`
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
     color: #626262;
     max-width: 900px;
-    margin: 0 auto;
+    margin: 100px auto;
     div {
         :first-child {
             margin: 0;
