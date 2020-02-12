@@ -2,17 +2,17 @@ export const menu = {
     PL: [
         {
             id: '1',
-            path: '/RodzinaSOS/front/',
+            path: '/RodzinaSOS/',
             slug: 'start',
         },
         {
             id: '2',
-            path: '/RodzinaSOS/front/terapia',
+            path: '/RodzinaSOS/terapia',
             slug: 'psychoterapia',
         },
         {
             id: '3',
-            path: '/RodzinaSOS/front/plodnosc',
+            path: '/RodzinaSOS/plodnosc',
             slug: 'płodność',
         },
         {
@@ -22,12 +22,12 @@ export const menu = {
         },
         {
             id: '5',
-            path: '/RodzinaSOS/front/oNas',
+            path: '/RodzinaSOS/oNas',
             slug: 'o nas',
         },
         {
             id: '6',
-            path: '/RodzinaSOS/front/kontakt',
+            path: '/RodzinaSOS/kontakt',
             slug: 'kontakt',
         },
     ] 

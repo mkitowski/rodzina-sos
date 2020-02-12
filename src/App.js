@@ -21,19 +21,19 @@ const App = props => {
     <BrowserRouter>
       <MenuConnect/>
       <Switch>
-        <Route exact path='/RodzinaSOS/front/'>
+        <Route exact path='/RodzinaSOS/'>
           <StartConnect/>
         </Route>
-        <Route exact path='/RodzinaSOS/front/terapia'>
+        <Route exact path='/RodzinaSOS/terapia'>
           <PsychoConnect/>
         </Route>
-        <Route exact path='/RodzinaSOS/front/plodnosc'>
+        <Route exact path='/RodzinaSOS/plodnosc'>
           <FertilityConnect/>
         </Route>
-        <Route exact path='/RodzinaSOS/front/oNas'>
+        <Route exact path='/RodzinaSOS/oNas'>
           <AboutConnect/>
         </Route>
-        <Route exact path='/RodzinaSOS/front/kontakt'>
+        <Route exact path='/RodzinaSOS/kontakt'>
           <ContactConnect/>
         </Route>
       </Switch>
