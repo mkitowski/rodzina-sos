@@ -7,20 +7,21 @@ const ImageStyledBox = styled.div`
     background-position: center;
     background-size: contain;
     width: 45%;
-    min-height: 400px;
+    min-height: 450px;
     display: flex;
     justify-content: center;
     align-items: center;
-    @media (max-width: 600px) {
+    @media (max-width: 450px) {
         width: 90%;
+        min-height: 250px;
+        font-size: 1.5rem;
     }
     transition: filter .3s ease-in-out;
-    :hover {
-    
         > div{
-            color: white;
-            background-color: rgba(98,98,98,.5);
-    box-shadow: 0 0 10px 10px rgba(98,98,98,.5);
+            color: #e6bc28;
+            background-color: rgba(98,98,98,.7);
+            box-shadow: 0 0 10px 10px rgba(98,98,98,.7);
+            max-width: 200px;
             
         }
     }

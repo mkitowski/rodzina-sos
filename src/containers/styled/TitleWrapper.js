@@ -11,4 +11,8 @@ export const TitleWrapper = styled.div`
     border-top: 1px solid #626262; 
     border-bottom: 1px solid #626262; 
     width: 60%;
+    @media (max-width: 450px){
+        ${props => props.top ? `font-size: 1.5rem` : `font-size: 2rem`};
+        margin-top: 16vh;
+    }
 `;

@@ -44,4 +44,7 @@ export const MoreIconWrapper = styled.div`
             animation: ${heartbeat} 1.5s ease-in-out infinite both;
         }
     }
+    @media (max-width: 450px){
+      bottom: 40px;
+    }
 `;

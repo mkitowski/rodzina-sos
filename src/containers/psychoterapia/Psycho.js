@@ -34,15 +34,15 @@ export const Psycho = (props) => {
                             </TitleWrapper>
                         </DarkWrapper>
                     </SectionWrapper>
-                    <SectionWrapper>
+                    <SectionWrapper className={'mobile_narrow'}>
                         <SectionsDescription sections={therapyPage.sections} />
                         <DeatilsWrapper>
                             {therapyPage.details}
                         </DeatilsWrapper>
                         <DataGrid data={therapyPage.therapies} />
                     </SectionWrapper>
-                    <SectionWrapper img={paper} top={true}>
-                        <ExampleSituationWrapper>
+                    <SectionWrapper img={paper} top={true} className={'psycho_example'}>
+                        <ExampleSituationWrapper >
                             <ExampleTitleWrapper>
                                 {therapyPage.example.title}
                             </ExampleTitleWrapper>

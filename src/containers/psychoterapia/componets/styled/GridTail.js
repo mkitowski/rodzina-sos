@@ -31,6 +31,9 @@ const GridTailStyled = styled.div`
         transform: rotate(${props => props.visible ? '180' : '0'}deg);
         transition: transform .3s ease-in-out;
     }
+    @media (max-width: 450px) {
+        font-size: 1.2rem;
+    }
 `;
 
 export const GridTail = ({ title, content }) => {

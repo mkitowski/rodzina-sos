@@ -31,7 +31,7 @@ export const About = (props) => {
                             </AboutTitleStyled>
                         </DarkWrapper>
                     </SectionWrapper>
-                    <SectionWrapper top={true}>
+                    <SectionWrapper top={true} className={'mobile_narrow'}>
                         <AboutContentWrapper >
                             {
                                 page.content && page.content.map(el => {

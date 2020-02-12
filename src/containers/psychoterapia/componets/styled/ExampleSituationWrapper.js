@@ -8,4 +8,7 @@ export const ExampleSituationWrapper = styled.div`
     width: 100%;
     background-color: rgba(0,0,0,.4);
     position: absolute;
+    @media (max-width: 450px) {
+        height: 100%;
+    }
 `;
