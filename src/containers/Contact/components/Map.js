@@ -43,7 +43,7 @@ export const Mapa = ({ coordinates }) => {
                         stroke: 'none',
                         transform: `translate(${-SIZE / 2}px,${-SIZE}px)`
                     }}
-                ></svg>
+                />
             </Marker>
         </MapGL>
     );

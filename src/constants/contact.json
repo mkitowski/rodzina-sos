@@ -2,25 +2,25 @@
     "PL": {
         "title": "Kontakt",
         "address": [
-            "Lipowa 1071",
+            "Kolorowa 11",
             "34-324 Lipowa"
         ],
         "tel": "+48 579 069 089 ",
         "email": "magdalenakimel@gmail.com",
         "hint": "Spotkania są możliwe po wcześniejszym umowieniu telefonicznym",
         "location": "Gabinet znajduje się nad apteką Św. Bartłomieja",
-        "geolocation": [49.66691, 19.10224]
+        "geolocation": [49.40371, 19.04476]
     },
     "EN": {
         "title": "Kontakt",
         "address": [
-            "Lipowa 1071",
+            "Kolorowa 11",
             "34-324 Lipowa"
         ],
         "tel": "+48 579 069 089 ",
         "email": "magdalenakimel@gmail.com",
         "hint": "Spotkania są możliwe po wcześniejszym umowieniu telefonicznym",
         "location": "Gabinet znajduje się nad apteką Św. Bartłomieja",
-        "geolocation": [49.6667, 19.1031]
+        "geolocation": [49.40371, 19.04476]
     }
 }
