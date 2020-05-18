@@ -7,7 +7,7 @@ export const ExampleTitleWrapper = styled.div`
     :nth-child(2) {
         padding-top: 8rem;
     }}
-    @media (max-width: 450px) {
+    @media (max-width: 600px) {
         font-size: 1.5rem;
     }
 `;

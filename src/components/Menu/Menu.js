@@ -33,7 +33,7 @@ export const Menu = props => {
             <MenuIcon className={'burger'} onClick={clickHandler}/>}
 
             <MenuLogo logo={logo} />
-            <ul className={isMenuVisible && 'menu_visible'}>
+            <ul className={isMenuVisible ? 'menu_visible' : ''}>
                 {menu[lang].map(el => {
                     return (
                         el.slug !== 'vlog' ?

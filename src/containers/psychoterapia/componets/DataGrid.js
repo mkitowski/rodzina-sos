@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import {GridTail} from './styled/GridTail';
 
@@ -7,12 +7,7 @@ const GridStyled = styled.div`
 `;
 
 export const DataGrid = ({data}) => {
-    const [visible, setVisible] = useState(false);
-    
-    const clickHandle = () => {
-        const result = !visible;
-        setVisible(result);
-    }
+
     return(<GridStyled>
     {data.map(el => {
         return (           

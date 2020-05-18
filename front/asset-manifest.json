@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "./static/css/main.0acb36dc.chunk.css",
+    "main.js": "./static/js/main.404e9526.chunk.js",
+    "main.js.map": "./static/js/main.404e9526.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.ef889f89.js",
+    "runtime-main.js.map": "./static/js/runtime-main.ef889f89.js.map",
+    "static/js/2.60038a17.chunk.js": "./static/js/2.60038a17.chunk.js",
+    "static/js/2.60038a17.chunk.js.map": "./static/js/2.60038a17.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.97083b015086496f50fa3486abedf2ef.js": "./precache-manifest.97083b015086496f50fa3486abedf2ef.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/main.0acb36dc.chunk.css.map": "./static/css/main.0acb36dc.chunk.css.map",
+    "static/js/2.60038a17.chunk.js.LICENSE": "./static/js/2.60038a17.chunk.js.LICENSE",
+    "static/media/Couple.jpg": "./static/media/Couple.4434c93e.jpg",
+    "static/media/aboutTop.jpeg": "./static/media/aboutTop.918b0c2d.jpeg",
+    "static/media/contact.jpeg": "./static/media/contact.cb120617.jpeg",
+    "static/media/logo.png": "./static/media/logo.cc559037.png",
+    "static/media/obraczki.jpeg": "./static/media/obraczki.a833d5c1.jpeg",
+    "static/media/paper.jpg": "./static/media/paper.4f831fdd.jpg",
+    "static/media/plodnosc.jpeg": "./static/media/plodnosc.8486121f.jpeg",
+    "static/media/psycho-background.jpeg": "./static/media/psycho-background.ff30238d.jpeg",
+    "static/media/tail1.jpeg": "./static/media/tail1.5c8cb021.jpeg",
+    "static/media/tail2.jpeg": "./static/media/tail2.33136934.jpeg",
+    "static/media/twarze.jpeg": "./static/media/twarze.77506c87.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ef889f89.js",
+    "static/js/2.60038a17.chunk.js",
+    "static/css/main.0acb36dc.chunk.css",
+    "static/js/main.404e9526.chunk.js"
+  ]
+}

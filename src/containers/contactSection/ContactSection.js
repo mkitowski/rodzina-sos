@@ -7,10 +7,10 @@ export const ContactSection = (props) => {
     const { isFetchingSection, fetchSection, section, isSectionFetched } = props;
    
     useEffect(() => {
-        if (!isFetchingSection) {
+        if (!isFetchingSection && !isSectionFetched) {
             fetchSection('contactSection');
         }
-    }, []);
+    }, [isSectionFetched, isFetchingSection, fetchSection]);
 
     const renderWrappSections = () => {
             const result = [];

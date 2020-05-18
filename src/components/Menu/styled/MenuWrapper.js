@@ -40,7 +40,7 @@ export const MenuWrapper = styled.div`
         }
     }
 
-    @media (max-width: 450px) {
+    @media (max-width: 600px) {
         justify-content: space-between;
 
         ul {
@@ -77,7 +77,7 @@ export const MenuLogo = styled.div`
     height: 70%;
     width: 50px;
     margin-left: 2.5%;
-    @media (max-width: 450px) {
+    @media (max-width: 600px) {
         margin-right: 15px;
     }
 `

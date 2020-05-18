@@ -11,7 +11,7 @@ const ImageStyledBox = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    @media (max-width: 450px) {
+    @media (max-width: 600px) {
         width: 90%;
         min-height: 250px;
         font-size: 1.5rem;

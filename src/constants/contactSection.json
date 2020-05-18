@@ -1,0 +1,24 @@
+{
+    "PL": {
+        "address": [
+            "Lipowa 1071",
+            "34-324 Lipowa"
+        ],
+        "phone": "+48 579 069 089 ",
+        "email": "magdalenakimel@gmail.com",
+        "facebook": "Śledź nas",
+        "youtube": "Zobacz Vlogi",
+        "www": "www.rodzina.sos.pl"
+    },
+    "EN": {
+        "address": [
+            "Lipowa 1071",
+            "34-324 Lipowa"
+        ],
+        "phone": "+48 579 069 089 ",
+        "email": "magdalenakimel@gmail.com",
+        "facebook": "Follow us",
+        "youtube": "What our Vlogs",
+        "www": "www.rodzina.sos.pl"
+    }
+}

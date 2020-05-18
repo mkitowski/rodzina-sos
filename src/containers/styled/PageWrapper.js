@@ -9,7 +9,7 @@ scroll-behavior: smooth;
     color: black;
     background: white;
 }
-@media (max-width: 450px) {
+@media (max-width: 600px) {
     .mobile_narrow {
         width: 90%;
         margin: 0 auto;

@@ -50,7 +50,6 @@ const initialState = {
 }
 
 export function rootReducer(state = initialState, action) {
-    console.log(action.type);
     switch (action.type) {
         //START PAGE
         case FETCH_START_PAGE:

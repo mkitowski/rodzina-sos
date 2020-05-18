@@ -1,11 +1,15 @@
-export function getPosts() {
-    return fetch('RodzinaSOS/?rest_route=/wp/v2/posts');
+import start from '../constants/start.json';
+import about from '../constants/about.json';
+import contact from '../constants/contact.json';
+import contactSection from '../constants/contactSection.json';
+import plodnosc from '../constants/plodnosc.json';
+import psyho from '../constants/psyho.json';
+
+const files = {
+    start, about, contact, contactSection, plodnosc, psyho
 }
 
 export function getPage(slug) {
-    return fetch(`backend/api/get_page?slug=${slug}`)
-    // return fetch(`http://serwer1983560.home.pl/RodzinaSOS/backend/api/get_page?slug=${slug}`)
-    .then(response => {
-        return response.json();
-    })
+
+    return files[slug];
 }

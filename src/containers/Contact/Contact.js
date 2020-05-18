@@ -17,7 +17,7 @@ export const Contact = (props) => {
             fetchPage('contact');
         }
     }, [isFetchingPage, isError, isPageFetched, fetchPage]);
-    console.log(window)
+    
     return (
         <>
             {!isPageFetched || isFetchingPage ?
