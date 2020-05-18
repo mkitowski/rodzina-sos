@@ -9,7 +9,7 @@
         "email": "magdalenakimel@gmail.com",
         "hint": "Spotkania są możliwe po wcześniejszym umowieniu telefonicznym",
         "location": "Gabinet znajduje się nad apteką Św. Bartłomieja",
-        "geolocation": [49.40371, 19.04476]
+        "geolocation": [49.676958, 19.079862]
     },
     "EN": {
         "title": "Kontakt",
@@ -21,6 +21,6 @@
         "email": "magdalenakimel@gmail.com",
         "hint": "Spotkania są możliwe po wcześniejszym umowieniu telefonicznym",
         "location": "Gabinet znajduje się nad apteką Św. Bartłomieja",
-        "geolocation": [49.40371, 19.04476]
+        "geolocation": [49.676958, 19.079862]
     }
 }
