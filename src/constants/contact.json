@@ -8,7 +8,7 @@
         "tel": "+48 579 069 089 ",
         "email": "magdalenakimel@gmail.com",
         "hint": "Spotkania są możliwe po wcześniejszym umowieniu telefonicznym",
-        "location": "Gabinet znajduje się nad apteką Św. Bartłomieja",
+        "location": "Adres: ",
         "geolocation": [49.676958, 19.079862]
     },
     "EN": {
@@ -20,7 +20,7 @@
         "tel": "+48 579 069 089 ",
         "email": "magdalenakimel@gmail.com",
         "hint": "Spotkania są możliwe po wcześniejszym umowieniu telefonicznym",
-        "location": "Gabinet znajduje się nad apteką Św. Bartłomieja",
+        "location": "Adres:",
         "geolocation": [49.676958, 19.079862]
     }
 }

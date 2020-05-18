@@ -13,7 +13,7 @@ export const ContactWrapperSection = (props) => {
                 setAddres(`mailto:${props.text}`);
                 break;
             case 'address':
-                setAddres(`https://goo.gl/maps/jQntkNC4Twd1ocQq8`);
+                setAddres(`https://goo.gl/maps/PUZhgVUuSfVBiT7f8`);
                 break;
             case 'facebook':
                 setAddres('https://www.facebook.com/RodzinaSOSpl-261293988080556/');
